@@ -7,10 +7,10 @@ question answering, showing robustness outside the domains it was
 trained on. It has been trained in "multi-angle" fashion, which means it can handle a flexible set of input
 and output "slots" (like question, answer, explanation) .
 
-Macaw was built on top of [T5](https://github.com/google-research/text-to-text-transfer-transformer) and 
-comes in different sizes:  [macaw-11b](https://huggingface.co/allenai/macaw-11b), [macaw-3b](https://huggingface.co/allenai/macaw-3b), 
-and [macaw-large](https://huggingface.co/allenai/macaw-large), as well as an answer-focused version featured on 
-various leaderboards: [macaw-answer-11b](https://huggingface.co/allenai/macaw-answer-11b) (see [below](#training-data)).
+Macaw construit sur [T5 (text-to-text-transfer-transformer)](https://github.com/google-research/text-to-text-transfer-transformer)
+and comes in different sizes:  [macaw-11b](https://huggingface.co/allenai/macaw-11b), [macaw-3b](https://huggingface.co/allenai/macaw-3b), 
+and [macaw-large](https://huggingface.co/allenai/macaw-large), 
+as well as an answer-focused version featured on various leaderboards: [macaw-answer-11b](https://huggingface.co/allenai/macaw-answer-11b) (see [below](#training-data)).
 
 ### Examples
 
@@ -68,8 +68,8 @@ more so for the macaw-large model vs the larger ones.
 
 The code in `macaw/utils.py` includes some convenience wrappers, such as `load_model` and 
 `run_macaw`, here are some examples
-loading the macaw-11b model onto two GPUs (need around 48GB total GPU memory for the 
-largest model to work):
+loading the macaw-11b model onto **two GPUs (need around 48GB total GPU memory for the 
+largest model to work**):
 
 ```
 from macaw.utils import load_model, run_macaw
